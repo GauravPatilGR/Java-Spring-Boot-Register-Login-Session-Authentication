@@ -7,5 +7,8 @@ public interface serviceemp {
 	
 	
 	empdata findbyemailandpass(String email,String password);
+	
+	
+	empdata findbyiddata(int id);
 
 }

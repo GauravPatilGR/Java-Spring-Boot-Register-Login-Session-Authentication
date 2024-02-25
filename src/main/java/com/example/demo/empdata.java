@@ -24,6 +24,30 @@ public class empdata {
 	
 	private String password;
 	
+	private String profilephoto;
+	
+	private String about;
+	
+	
+
+	
+
+	public String getProfilephoto() {
+		return profilephoto;
+	}
+
+	public void setProfilephoto(String profilephoto) {
+		this.profilephoto = profilephoto;
+	}
+
+	public String getAbout() {
+		return about;
+	}
+
+	public void setAbout(String about) {
+		this.about = about;
+	}
+
 	public int getId() {
 		return id;
 	}

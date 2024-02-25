@@ -27,4 +27,19 @@ public class Daoemp implements serviceemp {
 		return r1.findByEmailAndPassword(email, password);
 	}
 
+
+
+	@Override
+	public empdata findbyiddata(int id) {
+		
+		return r1.getById(id);
+	}
+
+
+
+	
+
+
+
+	
 }

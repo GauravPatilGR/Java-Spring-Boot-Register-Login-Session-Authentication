@@ -16,12 +16,13 @@
 <% HttpSession h1=request.getSession(false);%>
 
 
+
 <div class="container emp-profile">
             <form method="post">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="profile-img">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog" alt=""/>
+                            <img src="images/<%out.print(h1.getAttribute("profile"));%>" alt="">
                             <div class="file btn btn-lg btn-primary">
                                 Change Photo
                                 <input type="file" name="file"/>
@@ -38,16 +39,30 @@
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                                    <p> <%out.print(h1.getAttribute("about"));%></p>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Timeline</a>
-                                </li>
+                               
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-2">
                         <a href="logout">Logout</a>
+                        
+                        
+                        
+                        <br>
+                        <br>
+                        
+                       <a href="edit/<%out.println(h1.getAttribute("id"));%>">Edit Profile</a>
+                        
+                      <div class="col-md-2">
+                      
                     </div>
+                    </div>
+                    
+                    
+                    
+                    
                 </div>
              
                     <div class="col-md-8">

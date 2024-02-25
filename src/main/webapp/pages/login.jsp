@@ -3,7 +3,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Animated Login Form | CodingNepal</title>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -24,7 +24,7 @@
         
         <div class="pass">Forgot Password?</div>
         <input type="submit" value="Login" />
-        <div class="signup_link">Not a member? <a href="#">Signup</a></div>
+        <div class="signup_link">Not a member? <a href="/">Signup</a></div>
       </form>
     </div>
 
